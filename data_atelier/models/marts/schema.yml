@@ -1,0 +1,20 @@
+version: 2
+
+models:
+  - name: covid_evolution_par_pays
+    columns:
+      - name: pays
+        tests:
+          - not_null
+      - name: total_cas
+        tests:
+          - not_null
+
+  - name: covid_top_pays_touches
+    columns:
+      - name: pays
+        tests:
+          - not_null
+      - name: total_cas
+        tests:
+          - not_null

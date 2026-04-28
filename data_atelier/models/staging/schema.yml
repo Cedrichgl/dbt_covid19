@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: stg_jhu_covid19
+    columns:
+      - name: country
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+      - name: type
+        tests:
+          - not_null
+
+  - name: JHU_COVID_19_TIMESERIES
+    columns:
+      - name: pays
+        tests:
+          - not_null
+      - name: date
+        tests:
+          - not_null
+      - name: nombre_cas
+        tests:
+          - not_null
+
+  - name: stg_demographics
+    columns:
+      - name: etat
+        tests:
+          - not_null
+      - name: total_population
+        tests:
+          - not_null

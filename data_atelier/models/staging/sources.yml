@@ -1,0 +1,11 @@
+
+version: 2
+
+sources:
+  - name: covid19
+    database: COVID19_EPIDEMIOLOGICAL_DATA
+    schema: PUBLIC
+    tables:
+      - name: JHU_COVID_19_TIMESERIES
+      - name: JHU_COVID_19
+      - name: DEMOGRAPHICS

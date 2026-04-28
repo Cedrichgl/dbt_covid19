@@ -1,0 +1,9 @@
+
+
+SELECT 
+    COUNTRY_REGION AS country,
+    CAST(DATE AS DATE) AS date, 
+    CASE_TYPE AS type
+
+FROM {{ source("covid19", "JHU_COVID_19") }}
+WHERE COUNTRY_REGION IS NOT NULL
